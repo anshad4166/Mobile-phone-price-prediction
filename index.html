@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<style>
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }
+  </style>
+<body>
+  <div class="login">
+    <link rel="stylesheet" href="../static/style2.css">
+    <h1  style="text-align: center;color: black;">Predict Your Mobile Price.... </h1> 
+    <h3 style="text-align: center;color:  rgb(63, 63, 189);">Enter your features....</h3> 
+
+
+      <form action="/result" method="POST" style="padding-left: 250px" > 
+
+      <label for="battery_power"> Battery Energy storage in mAh </label>  
+      <input  type="text" name="battery_power" placeholder="Eg:2000" required="required"/>
+
+      <br>
+      <label for="px_width"> Pixel Resolution Width  </label> 
+      <input  type="text" name="px_width" placeholder="Eg:2100"  required="required"/>
+
+       <br>
+        <label for="px_height"> Pixel Resolution Height    </label> 
+      <input   type="text" name="px_height" placeholder="Eg:2110" required="required"/>
+
+      <br>
+
+      <label for="int_memory">Internal Memory in Gigabytes</label> 
+      <input  type="text" name="int_memory" placeholder="Eg:32 " required="required" />
+
+      <br>
+      <label for="pc"> Primary Camera mega pixels   </label>
+      <input   type="text" name="pc" placeholder="Eg:12 " required="required" />
+
+      <br>
+      <label for="ram">RAM in MB</label> 
+      <input  type="text" name="ram" placeholder="Eg:2000" required="required" />
+      <br>
+      <br>
+      <tr>
+        <td><input style="width: 125px;color: red;" type="submit" value="Predit"></td>
+        <td><input style="width: 125px;color: red;" type="reset"><td>
+        </tr> 
+      </form>
+  
+ 
+</body>
+</html>
